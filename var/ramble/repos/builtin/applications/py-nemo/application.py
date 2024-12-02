@@ -221,14 +221,6 @@ class PyNemo(ExecutableApplication):
         workloads=all_workloads,
     )
 
-    # Hydra parameters
-    workload_variable(
-        "hydra.searchpath",
-        default=default_config_string,
-        description="Hydra search paths",
-        workload_group="all_workloads",
-    )
-
     # Run parameters
     workload_variable(
         "run.name",
